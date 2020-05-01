@@ -146,7 +146,7 @@
                             <h2 class="mb-3"><?php _e( 'Something is Missing?', 'referral_list' ); ?></h2> 
                             <p class="lead"><?php _e( 'Ping us! We&apos;ll add your referral link to make the community profit from all the benefits.', 'referral_list' ); ?></p>
                         </div>
-                        <div class="align-items-center col-sm d-md-flex flex-lg-row flex-md-column justify-content-center">
+                        <div class="align-items-center col-sm d-flex flex-column flex-lg-row justify-content-center">
                             <a class="btn c-button c-button-lg mr-lg-5 " href="/submit-your-content/"><?php _e( 'Use the From', 'referral_list' ); ?></a> 
                             <a class="font-bolder font-weight-normal lead text-decoration-none" href="mailto:referrals@parys.tech" target="_blank"><?php _e( 'Contact Us', 'referral_list' ); ?></a>
                         </div>
