@@ -1,0 +1,17 @@
+<section>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-sm">
+                <img width="300px" class="my-auto" src="assets/img/hero.svg">
+            </div>
+            <div class="col-sm">
+                <div class="h5">
+                    <span class="badge badge-c-purple mb-3">Collaboration</span>
+                </div>
+                <h2 class="mb-3">Team Collaboration in Real time</h2> 
+                <p>Bring everyone together at the same time. Brainstorm, map out experiences, and drop in feedback all in one space. With our Craft plugin, you can connect your latest designs to a new or existing freehand for sharing.</p>
+                <a class="c-button c-button-sm  btn" href="#">Explore more</a> 
+            </div>
+        </div>
+    </div>
+</section>
