@@ -143,7 +143,7 @@
                 <div class="container p-5 general-roundness c-rounded-container">
                     <div class="row">
                         <div class="col-sm">
-                            <h2 class="mb-3"><?php _e( 'Something Missing?', 'referral_list' ); ?></h2> 
+                            <h2 class="mb-3"><?php _e( 'Something is Missing?', 'referral_list' ); ?></h2> 
                             <p class="lead"><?php _e( 'Ping us! We&apos;ll add your referral link to make the community profit from all the benefits.', 'referral_list' ); ?></p>
                         </div>
                         <div class="align-items-center col-sm d-md-flex flex-lg-row flex-md-column justify-content-center">
