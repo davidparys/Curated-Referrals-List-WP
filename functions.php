@@ -168,13 +168,6 @@ if ( ! function_exists( 'referral_list_enqueue_scripts' ) ) :
 
         /* Pinegrow generated Enqueue Scripts Begin */
 
-    wp_register_script( 'inline-script-1', '', [], '', true );
-    wp_enqueue_script( 'inline-script-1' );
-    wp_add_inline_script( 'inline-script-1', 'function ml_webform_success_2032470(){var r=ml_jQuery||jQuery;r(".success-message").show(),r(".ml-subscribe-form-2032470 .row-form").hide()}
-                                $("#newsletter-form").submit(function(){
-                                    $( "#newsletter-form" ).hide
-                                });');
-
     wp_deregister_script( 'webforms' );
     wp_enqueue_script( 'webforms', 'https://static.mailerlite.com/js/w/webforms.min.js?vee71a8848f3cc4af6b2730283dbdc659', false, null, true);
 
