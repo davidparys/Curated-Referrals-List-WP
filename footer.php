@@ -15,7 +15,7 @@
                         <p class="font-weight-bolder"><?php _e( 'Contact', 'referral_list' ); ?></p>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="mailto:referrals@parys.tech" class="text-reset"><?php _e( 'Email us', 'referral_list' ); ?></a>
+                                <a href="mailto:referrals@parys.tech" class="text-reset"><?php _e( 'Submit your own', 'referral_list' ); ?></a>
                             </li>
                             <li>
                                 <a href="/submit-your-content/" class="text-reset"><?php _e( 'Use the Form', 'referral_list' ); ?></a> 
