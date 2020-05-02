@@ -2,21 +2,7 @@
 
             <div class="container py-5">
                 <!-- container -->
-                <?php $breadcrumbs = PG_Helper::getBreadcrumbs( 'parents', false, ''); ?>
-                <?php if( !empty( $breadcrumbs ) ) : ?>
-                    <ol class="breadcrumb" cms-breadcrumbs-item="> li:nth-of-type(2)" cms-breadcrumbs-item-name="> li:nth-of-type(2) > a" cms-breadcrumbs-first-item="> li:nth-of-type(1)" cms-breadcrumbs-first-item-name="> li:nth-of-type(1) > a">
-                        <?php $breadcrumb = $breadcrumbs[ 0 ]; ?>
-                        <li class="breadcrumb-item">
-                            <a href="<?php echo esc_url( $breadcrumb[ 'link' ] ); ?>"><?php echo $breadcrumb[ 'name' ]; ?></a>
-                        </li>
-                        <?php for( $breadcrumbs_i = 1; $breadcrumbs_i < count( $breadcrumbs ); $breadcrumbs_i++) : ?>
-                            <?php $breadcrumb = $breadcrumbs[ $breadcrumbs_i ]; ?>
-                            <li class="breadcrumb-item">
-                                <a href="<?php echo esc_url( $breadcrumb[ 'link' ] ); ?>"><?php echo $breadcrumb[ 'name' ]; ?></a>
-                            </li>
-                        <?php endfor; ?>
-                    </ol>
-                <?php endif; ?>
+                <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
                 <div class="h5">
                     <span class="badge badge-c-purple mb-3"><?php _e( 'Referral Links', 'referral_list' ); ?></span>
                 </div>

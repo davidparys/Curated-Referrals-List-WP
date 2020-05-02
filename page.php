@@ -13,22 +13,8 @@
     <!-- negative section -->
     <div class="container">
         <div class="bg-light border justify-content-center mt-n4 p-sm-5 pb-4 pl-2 pr-2 pt-4 rounded-sm row text-dark">
-            <div class="col-md-9">
-                <?php $breadcrumbs = PG_Helper::getBreadcrumbs( 'parents', true, 'Home'); ?>
-                <?php if( !empty( $breadcrumbs ) ) : ?>
-                    <ol class="breadcrumb" cms-breadcrumbs-item="> li:nth-of-type(2)" cms-breadcrumbs-item-name="> li:nth-of-type(2) > a" cms-breadcrumbs-first-item="> li:nth-of-type(1)" cms-breadcrumbs-first-item-name="> li:nth-of-type(1) > a" cms-breadcrumbs-home>
-                        <?php $breadcrumb = $breadcrumbs[ 0 ]; ?>
-                        <li class="breadcrumb-item">
-                            <a href="<?php echo esc_url( $breadcrumb[ 'link' ] ); ?>"><?php echo $breadcrumb[ 'name' ]; ?></a>
-                        </li>
-                        <?php for( $breadcrumbs_i = 1; $breadcrumbs_i < count( $breadcrumbs ); $breadcrumbs_i++) : ?>
-                            <?php $breadcrumb = $breadcrumbs[ $breadcrumbs_i ]; ?>
-                            <li class="breadcrumb-item">
-                                <a href="<?php echo esc_url( $breadcrumb[ 'link' ] ); ?>"><?php echo $breadcrumb[ 'name' ]; ?></a>
-                            </li>
-                        <?php endfor; ?>
-                    </ol>
-                <?php endif; ?>
+            <div class="breadcrumb col-md-9 mb-3">
+                <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
             </div>
             <?php echo the_post(); ?>
             <div class="container py-3">
