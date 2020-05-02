@@ -38,7 +38,7 @@
                         <div style="font-size:1.2rem;">
                             <div class="d-inline">
                                 <!-- Facebook -->
-                                <a href="facebook.com/ParysTECH" target="_blank"><i class="badge-c-gray badge-c-purple fa-facebook-square fab general-roundness p-3"></i></a>
+                                <a href="https://facebook.com/ParysTECH" target="_blank"><i class="badge-c-gray badge-c-purple fa-facebook-square fab general-roundness p-3"></i></a>
                             </div>                             
                             <div class="d-inline">
                                 <!-- Twitter -->
