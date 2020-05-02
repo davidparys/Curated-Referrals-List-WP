@@ -1,0 +1,202 @@
+/*
+Theme Name: Referral-list
+Theme URI: http://example.com
+Author: Your name
+Author URI: http://pinegrow.com/
+Description: This theme was created with Pinegrow Web Editor
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: referral_list
+*/
+:root {
+    --c-main: #f3f1ff;
+    --c-secondary: #faf9ff;
+    --c-accent: #896eff;
+    --accent-triad: #ff9200;
+    --c-alt: #e4dfff;
+    --c-light: #ffffff;
+    --c-bg: #fcfcff;
+
+    /*misc */
+    --c-general-roundness: 10px;
+    
+
+    /* font colors */
+    --c-headers: #1f2471;
+    --c-paragraph: #475d87;
+ 
+
+    /* shadows */
+    --c-soft-shadow: 0 1.4px 2.2px rgba(0, 0, 0, 0.017),
+      0 3.3px 5.3px rgba(0, 0, 0, 0.024),
+      0 6.3px 10px rgba(0, 0, 0, 0.03),
+      0 11.2px 17.9px rgba(0, 0, 0, 0.036),
+      0 20.9px 33.4px rgba(0, 0, 0, 0.043),
+      0 50px 80px rgba(0, 0, 0, 0.06);
+    
+    --c-softer-shadow: 0 3px 2px rgba(0, 0, 0, 0.017),
+    0 7.2px 4.7px rgba(0, 0, 0, 0.024),
+    0 13.6px 8.9px rgba(0, 0, 0, 0.03),
+    0 24.3px 15.9px rgba(0, 0, 0, 0.036),
+    0 45.5px 29.7px rgba(0, 0, 0, 0.043),
+    0 109px 71px rgba(0, 0, 0, 0.06);
+
+}
+/* Smooth Scroll */
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+    color: var(--c-accent);
+}
+	
+h1 {
+    color: var(--c-headers) !important;
+    text-transform: uppercase;
+}
+
+h1,h2 {
+    font-weight: 700 !important;
+}
+
+h3,h4
+{
+   font-weight: 500 !important;
+   color: #47425e !important;
+}
+
+body {
+    background-color: var(--c-bg);
+    color: var(--c-paragraph);
+    font-family: 'Work Sans', sans-serif;
+    
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Cairo', sans-serif;
+}
+
+.c-bg {
+    background-color: var(--c-main);
+}
+.c-border {
+	border: 1px solid #eaecfb;
+    background: var(--c-bg);
+    border-radius: var(--c-general-roundness);
+    transition:  background 1.5s cubic-bezier(0.00, 0.00, 0.04, 0.97), box-shadow 0.5s cubic-bezier(0.00, 0.00, 0.04, 0.97), transform 1s cubic-bezier(0.00, 0.00, 0.04, 0.97);
+    
+}
+.c-border:hover {
+	background: #FFF;
+	transform: translateY(-15px);
+    box-shadow: var(--c-softer-shadow);
+    
+}
+.c-button-lg {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+}
+.c-button-sm {
+    padding: 10px 25px;
+}
+.c-button-xs {
+    padding: 5px 25px;
+}
+
+.c-button {
+    color: var(--c-light);
+    background-color: var(--c-accent);
+    border-radius: var(--c-general-roundness);
+    font-weight: 500;
+    transition: 0.2s;
+}
+.c-button:hover {
+    color: var(--c-secondary);
+    box-shadow: var(--c-soft-shadow);
+   /* transform: translateY(-5px);*/
+    
+}
+
+.c-button-out {
+ border: solid 2px var(--c-accent);
+ background-color: var(--c-bg);
+ color: var(--c-headers);
+}
+.c-button-out:hover {
+    background-color: var(--c-accent);
+    
+}
+
+.c-button-accent-triad {
+    background-color: var(--accent-triad);
+}
+
+.badge-c-purple {
+    background-color: var(--c-alt);
+    color: var(--c-accent);
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+#newsletter, #main-article {
+    background-color: var(--c-accent);
+}
+.c-text-white {
+    color: var(--c-secondary) !important;
+}
+.general-roundness {
+    border-radius: var(--c-general-roundness) !important;
+}
+.testimonial-inner
+{
+    background-color: #FFF;
+    box-shadow: var(--c-softer-shadow);
+}
+
+.c-rounded-container {
+    background-color: #f6f3f9;
+}
+#header-cta
+{
+    background-color: var(--c-main);
+}
+#header-cta:hover {
+    color: var(--c-secondary);
+    background-color: var(--c-accent);
+}
+.badge-c-green
+{
+    background-color: #d3fff4 ;
+    color: #68aa9a;
+}
+.badge-c-blue {
+    background-color: #c8e1ff;
+    color: #7899c1;
+}
+.badge-c-pink {
+    background-color: #fae3ff;
+    color: #b26cc2;
+}
+.badge-c-gray {
+    background-color: #c7c9d0;
+    color: #f3f1ff;
+}
+#emailInput::placeholder {
+    font-size: 14px;
+}
+/* Single Posts */
+.group-list-title-post {
+    font-weight: 600;
+}
+.group-list-inline-start-none ul{
+ 	padding-left:15px;
+    padding-right: 15px;
+}
+/* Let's make rankmath better */
+.rank-math-breadcrumb p {
+    margin-bottom: 0;
+}
