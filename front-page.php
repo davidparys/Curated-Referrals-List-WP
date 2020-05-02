@@ -147,7 +147,7 @@
                             <p class="lead"><?php _e( 'Ping us! We&apos;ll add your referral link to make the community profit from all the benefits.', 'referral_list' ); ?></p>
                         </div>
                         <div class="align-items-center col-sm d-flex flex-column flex-lg-row justify-content-center">
-                            <a class="btn c-button c-button-lg mr-lg-5 " href="/submit-your-content/"><?php _e( 'Use the From', 'referral_list' ); ?></a> 
+                            <a class="btn c-button c-button-lg mr-lg-5 " href="/submit-your-content/"><?php _e( 'Use the Form', 'referral_list' ); ?></a> 
                             <a class="font-bolder font-weight-normal lead text-decoration-none" href="mailto:referrals@parys.tech" target="_blank"><?php _e( 'Contact Us', 'referral_list' ); ?></a>
                         </div>
                     </div>
