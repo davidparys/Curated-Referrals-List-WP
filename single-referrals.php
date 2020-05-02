@@ -14,9 +14,7 @@
     <div class="container">
         <div class="bg-light border justify-content-center mt-n4 p-sm-5 pb-4 pl-2 pr-2 pt-4 rounded-sm row text-dark">
             <div class="col-md-9">
-                <ol class="breadcrumb">
-                    <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
-                </ol>
+                <?php if (function_exists('rank_math_the_breadcrumbs')) rank_math_the_breadcrumbs(); ?>
             </div>
             <div class="col-lg-6 col-md-8 col-sm-12 mb-3">
                 <ul class="list-group">
