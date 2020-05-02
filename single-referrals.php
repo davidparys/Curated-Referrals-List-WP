@@ -60,7 +60,7 @@
             </div>
             <div class="col-md-9">
                 <div class="align-content-center align-items-center d-flex flex-column flex-sm-row justify-content-center justify-content-sm-between">
-                    <a class="btn btn-danger c-button-xs disabled general-roundness order-1 order-sm-2" href="#" data-toggle="tooltip" data-trigger="click" title="This feature is coming soon."><?php _e( 'Report this link', 'referral_list' ); ?></a> 
+                    <a class="btn btn-danger c-button-xs general-roundness order-1 order-sm-2" href="#" data-toggle="tooltip" data-trigger="hover" title="This feature is coming soon."><?php _e( 'Report this link', 'referral_list' ); ?></a> 
                     <a class="btn c-button c-button-out c-button-xs mb-3 mb-sm-0" href="<?php echo esc_url( get_field( 'Referral_url' ) ); ?>"><?php _e( 'Get the Referral Link', 'referral_list' ); ?></a> 
                 </div>
             </div>                         
