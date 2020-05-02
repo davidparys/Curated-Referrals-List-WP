@@ -36,6 +36,8 @@ function referral_list_setup() {
      */
     /* Pinegrow generated Register Menus Begin */
 
+    register_nav_menu(  'primary', __( 'Main Menu', 'referral_list' )  );
+
     /* Pinegrow generated Register Menus End */
     
 /*
@@ -84,15 +86,16 @@ function referral_list_init() {
      */
     /* Pinegrow generated Custom Post Types Begin */
 
-    register_post_type('Referrals', array(
+    register_post_type('referrals', array(
         'labels' => 
             array(
-                'name' => __( 'Referral Lists', 'referral_list' ),
-                'singular_name' => __( 'Referral List', 'referral_list' )
+                'name' => __( 'Referrals', 'referral_list' ),
+                'singular_name' => __( 'Referral', 'referral_list' )
             ),
-        'description' => __( 'A curated list of Referral links that you can use', 'referral_list' ),
+        'description' => __( 'A curated list of referral links', 'referral_list' ),
         'public' => true,
-        'supports' => array( 'title', 'custom-fields', 'author', 'comments' ),
+        'hierarchical' => true,
+        'supports' => array( 'title', 'author', 'thumbnail', 'custom-fields' ),
         'has_archive' => true,
         'show_in_menu' => true,
         'taxonomies' => array( 'category' )
@@ -165,6 +168,9 @@ if ( ! function_exists( 'referral_list_enqueue_scripts' ) ) :
 
         /* Pinegrow generated Enqueue Scripts Begin */
 
+    wp_deregister_script( 'webforms' );
+    wp_enqueue_script( 'webforms', 'https://static.mailerlite.com/js/w/webforms.min.js?vee71a8848f3cc4af6b2730283dbdc659', false, null, true);
+
     wp_deregister_script( 'jquery' );
     wp_enqueue_script( 'jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', false, null, true);
 
@@ -205,6 +211,8 @@ function pgwp_sanitize_placeholder($input) { return $input; }
  */
 /* Pinegrow generated Include Resources Begin */
 require_once "inc/wp_pg_helpers.php";
+require_once "inc/wp_smart_navwalker.php";
+require_once "inc/wp_pg_pagination.php";
 
     /* Pinegrow generated Include Resources End */
 ?>
