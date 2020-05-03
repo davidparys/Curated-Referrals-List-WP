@@ -131,8 +131,8 @@
                             <div class="features">
                                 <p class="h5"><i class="badge-c-green badge-c-purple fa-address-book fas general-roundness mr-2 p-2"></i><?php _e( 'Get the best deals', 'referral_list' ); ?></p>
                                 <p><?php _e( 'A lot of companies profit from your registration, why wouldn&apos;t you profit from it as well.', 'referral_list' ); ?></p>
-                                <p class="h5"><i class="badge-c-blue badge-c-purple fa-bahai fas general-roundness mr-2 p-2"></i><?php _e( 'What\'s in for us?', 'referral_list' ); ?></p>
-                                <p><?php _e( 'Nothing. During tough times, let\'s help each other. We collect no payment information. All of this is for free. Enjoy!', 'referral_list' ); ?></p>
+                                <p class="h5"><i class="badge-c-blue badge-c-purple fa-bahai fas general-roundness mr-2 p-2"></i><?php _e( 'What&apos;s in&nbsp;it for us?', 'referral_list' ); ?></p>
+                                <p><?php _e( 'Nothing. During tough times, let&apos;s help each other. We collect no payment information. All of this is for free. Enjoy!', 'referral_list' ); ?></p>
                                 <p class="h5"><i class="badge-c-pink badge-c-purple fa-concierge-bell fas general-roundness mr-2 p-2"></i><?php _e( 'Community Powered', 'referral_list' ); ?></p>
                                 <p><?php _e( 'Our main goal is to build a community for this, as there are thousands of companies offering different kinds of benefits for using a referral program.', 'referral_list' ); ?></p>
                             </div>                             
