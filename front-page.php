@@ -42,6 +42,7 @@
                             <p><?php _e( 'We offer only quality referral links. We don\'t like sketchy links, that\'s why before seeing them here, each link and platform is checked.', 'referral_list' ); ?></p>
                         </div>
                     </div>
+                    <hr>
                     <div class="justify-content-center row">
                         <!-- row -->
                         <!-- Column 1-->
@@ -84,7 +85,7 @@
                 </div>
             </section>
             <section id="newsletter">
-                <div class="c-text-white container py-3">
+                <div class="c-text-white container py-5">
                     <div class="row">
                         <div class="col-sm-6 d-flex ml-auto mr-auto">
                             <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/Newsletter.svg" class="d-block flex-grow-1" height="350px"/>
@@ -143,7 +144,7 @@
                 <div class="container p-5 general-roundness c-rounded-container">
                     <div class="row">
                         <div class="col-sm">
-                            <h2 class="mb-3"><?php _e( 'Something is Missing?', 'referral_list' ); ?></h2> 
+                            <h2 class="mb-3"><?php _e( 'Do you have a referral link to share?', 'referral_list' ); ?></h2> 
                             <p class="lead"><?php _e( 'Ping us! We&apos;ll add your referral link to make the community profit from all the benefits.', 'referral_list' ); ?></p>
                         </div>
                         <div class="align-items-center col-sm d-flex flex-column flex-lg-row justify-content-center">
