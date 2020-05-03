@@ -14,8 +14,8 @@
                             <p><?php _e( 'We curated the best link for you to get the best possible offer before purchasing any services.', 'referral_list' ); ?></p>
                             <a class="c-button c-button-lg btn mr-5" href="#ref-links"><?php _e( 'Get Started', 'referral_list' ); ?></a> 
                         </div>
-                        <div class="align-items-center col d-flex justify-content-center p-0">
-                            <img class="my-auto" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/Hero-img.svg" width="500px">
+                        <div class="align-items-center col-12 col-md-5 col-sm-12 d-flex justify-content-center p-0">
+                            <img class="img-fluid my-auto" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/Hero-img.svg" width="500px">
                         </div>
                         <!-- .Row -->
                     </div>
@@ -87,16 +87,16 @@
                 <div class="c-text-white container py-3">
                     <div class="row">
                         <div class="col-sm-6 d-flex ml-auto mr-auto">
-                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/Newsletter.svg" class="d-block" height="350px"/>
+                            <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/Newsletter.svg" class="d-block flex-grow-1" height="350px"/>
                         </div>
                         <div class="align-items-center col-sm-6 d-flex flex-column justify-content-center">
                             <h2 class="mb-3"><?php _e( 'Newsletter', 'referral_list' ); ?></h2> 
                             <p><?php _e( 'Register to the newsletter and be notified whenever we add new referrals.', 'referral_list' ); ?></p>
-                            <form id="newsletter-form" class="align-items-center d-flex flex-row form-inline justify-content-center w-100" action="https://app.mailerlite.com/webforms/submit/x6s6i5" data-code="x6s6i5" method="post" target="_blank">
+                            <form id="newsletter-form" class="align-items-center d-flex flex-row form justify-content-center w-100" action="https://app.mailerlite.com/webforms/submit/x6s6i5" data-code="x6s6i5" method="post" target="_blank">
                                 <label class="sr-only" for="emailInput">
                                     <?php _e( 'Your e-mail', 'referral_list' ); ?>
                                 </label>
-                                <input data-inputmask="" autocomplete="email" name="fields[email]" id="emailInput" type="email" class="form-control general-roundness" placeholder="Enter your e-mail" required style="width:60%">
+                                <input data-inputmask="" autocomplete="email" name="fields[email]" id="emailInput" type="email" class="form-control general-roundness mr-2" placeholder="Enter your e-mail" required>
                                 <button role="submit" type="submit" class="btn c-button c-button-accent-triad px-2">
                                     <?php _e( 'Submit', 'referral_list' ); ?>
                                 </button>
