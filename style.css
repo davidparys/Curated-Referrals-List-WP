@@ -196,10 +196,11 @@ h1,h2,h3,h4,h5,h6
  	padding-left:15px;
     padding-right: 15px;
 }
-/* Let's make rankmath better */
+/* Let's make rankmath breadcrumb a tiny bit better */
 .rank-math-breadcrumb p {
     margin-bottom: 0px !important;
 }
+/* Correction for the alert message */
 alert-message {
     font-size: 1em !important;
 }
