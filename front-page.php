@@ -50,7 +50,7 @@
                             $referrals_query_args = array(
                                 'post_type' => 'referrals',
                                 'nopaging' => true,
-                                'order' => 'ASC',
+                                'order' => 'DESC',
                                 'orderby' => 'date'
                             )
                         ?>
