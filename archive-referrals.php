@@ -24,6 +24,14 @@
                             <div class="col-md-4 col-sm-6 d-flex p-2" id="custom-post">
                                 <div class="c-border col-12 d-flex flex-column p-3">
                                     <h3 class="h4"><?php the_title(); ?></h3>
+                                    <div>
+                                        <?php $terms = get_the_terms( get_the_ID(), 'category' ) ?>
+                                        <?php if( !empty( $terms ) ) : ?>
+                                            <?php foreach( $terms as $term ) : ?>
+                                                <span class="badge badge-c-purple mb-3"><?php echo $term->name; ?></span>
+                                            <?php endforeach; ?>
+                                        <?php endif; ?>
+                                    </div>
                                     <p><?php echo get_field( 'referral_description' ); ?></p>
                                     <div class="align-content-end align-items-end d-flex flex-grow-1 flex-row justify-content-around">
                                         <a class="font-bolder font-weight-normal text-decoration-none" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Learn More', 'referral_list' ); ?></a>

@@ -22,6 +22,14 @@
                         <div class="group-list-title-post mb-3 lead">
                             <?php _e( 'Description', 'referral_list' ); ?>
                         </div>
+                        <div>
+                            <?php $terms = get_the_terms( get_the_ID(), 'category' ) ?>
+                            <?php if( !empty( $terms ) ) : ?>
+                                <?php foreach( $terms as $term ) : ?>
+                                    <span class="badge badge-c-purple mb-3"><?php echo $term->name; ?></span>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
+                        </div>
                         <div class="group-list-inline-start-none">
                             <span><?php echo get_field( 'referral_description' ); ?></span>
                         </div>
