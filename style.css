@@ -1,9 +1,9 @@
 /*
 Theme Name: Referral-list
-Theme URI: http://referrals.parys.tech
-Author: David Parys
+Theme URI: https://referrals.parys.tech
+Author: David PARYS
 Author URI: https://parys.tech
-Description: Created by David Parys
+Description: Created for referrals
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -198,5 +198,8 @@ h1,h2,h3,h4,h5,h6
 }
 /* Let's make rankmath better */
 .rank-math-breadcrumb p {
-    margin-bottom: 0;
+    margin-bottom: 0px !important;
+}
+alert-message {
+    font-size: 1em !important;
 }
