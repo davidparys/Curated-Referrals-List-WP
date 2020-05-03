@@ -11,7 +11,7 @@
                                 <?php _e( 'Collaboration', 'referral_list' ); ?>
                             </div>
                             <h1 class="display-4"><?php _e( 'Curated list of referral links', 'referral_list' ); ?></h1>
-                            <p><?php _e( 'We curated the best link for you to get the best possible offer before purchasing any services.', 'referral_list' ); ?></p>
+                            <p><?php _e( 'We\'ve curated the greatest links, allowing you to get the best possible offer when signing up.', 'referral_list' ); ?></p>
                             <a class="c-button c-button-lg btn mr-5" href="#ref-links"><?php _e( 'Get Started', 'referral_list' ); ?></a> 
                         </div>
                         <div class="align-items-center col-12 col-md-5 col-sm-12 d-flex justify-content-center p-0">
