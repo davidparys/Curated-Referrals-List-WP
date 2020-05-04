@@ -73,7 +73,6 @@
                                                 <?php endforeach; ?>
                                             <?php endif; ?>
                                         </div>
-                                        <p><?php echo get_field( 'referral_description' ); ?></p>
                                         <div class="align-content-end align-items-end d-flex flex-grow-1 flex-row justify-content-around">
                                             <a class="font-bolder font-weight-normal text-decoration-none" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Learn More', 'referral_list' ); ?></a>
                                             <a class="c-button c-button-xs c-button-out btn" href="<?php echo esc_url( get_field( 'Referral_url' ) ); ?>"><?php _e( 'Get the link', 'referral_list' ); ?></a> 
@@ -137,11 +136,11 @@
                             </div>
                             <h2 class="mb-3"><?php _e( 'Ideas during tough times', 'referral_list' ); ?></h2> 
                             <div class="features">
-                                <p class="h5"><i class="badge-c-green badge-c-purple fa-address-book fas general-roundness mr-2 p-2"></i><?php _e( 'Get the best deals', 'referral_list' ); ?></p>
+                                <p class="h5"><i class="badge-c-green badge-c-purple fa-grin-stars fas general-roundness mr-2 p-2"></i><?php _e( 'Get the best deals', 'referral_list' ); ?></p>
                                 <p><?php _e( 'A lot of companies profit from your registration, why wouldn&apos;t you profit from it as well.', 'referral_list' ); ?></p>
-                                <p class="h5"><i class="badge-c-blue badge-c-purple fa-bahai fas general-roundness mr-2 p-2"></i><?php _e( 'What&apos;s in&nbsp;it for us?', 'referral_list' ); ?></p>
+                                <p class="h5"><i class="badge-c-blue badge-c-purple fa-money-bill-wave-alt fas general-roundness mr-2 p-2"></i><?php _e( 'What&apos;s in&nbsp;it for us?', 'referral_list' ); ?></p>
                                 <p><?php _e( 'Nothing. During tough times, let&apos;s help each other. We collect no payment information. All of this is for free. Enjoy!', 'referral_list' ); ?></p>
-                                <p class="h5"><i class="badge-c-pink badge-c-purple fa-concierge-bell fas general-roundness mr-2 p-2"></i><?php _e( 'Community Powered', 'referral_list' ); ?></p>
+                                <p class="h5"><i class="badge-c-pink badge-c-purple fa-heart fas general-roundness mr-2 p-2"></i><?php _e( 'Community Powered', 'referral_list' ); ?></p>
                                 <p><?php _e( 'Our main goal is to build a community for this, as there are thousands of companies offering different kinds of benefits for using a referral program.', 'referral_list' ); ?></p>
                             </div>                             
                         </div>
@@ -156,7 +155,7 @@
                             <p class="lead"><?php _e( 'Ping us! We&apos;ll add your referral link to make the community profit from all the benefits.', 'referral_list' ); ?></p>
                         </div>
                         <div class="align-items-center col-sm d-flex flex-column flex-lg-row justify-content-center">
-                            <a class="btn c-button c-button-lg mr-lg-5 " href="/submit-your-content/"><?php _e( 'Use the Form', 'referral_list' ); ?></a> 
+                            <a class="btn c-button c-button-lg mr-lg-5 " href="/submit-your-content/"><?php _e( 'Add your link', 'referral_list' ); ?></a> 
                             <a class="font-bolder font-weight-normal lead text-decoration-none" href="mailto:referrals@parys.tech" target="_blank"><?php _e( 'Contact Us', 'referral_list' ); ?></a>
                         </div>
                     </div>
