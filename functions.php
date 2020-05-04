@@ -188,7 +188,7 @@ if ( ! function_exists( 'referral_list_enqueue_scripts' ) ) :
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/bootstrap/css/bootstrap.css', false, null, 'all');
 
     wp_deregister_style( 'style-1' );
-    wp_enqueue_style( 'style-1', 'https://fonts.googleapis.com/css?family=Work+Sans:700,500,600,400,300,800&display=swap', false, null, 'all');
+    wp_enqueue_style( 'style-1', 'https://fonts.googleapis.com/css?family=Work+Sans:400&display=swap', false, null, 'all');
 
     wp_deregister_style( 'style' );
     wp_enqueue_style( 'style', get_bloginfo('stylesheet_url'), false, null, 'all');
@@ -197,7 +197,7 @@ if ( ! function_exists( 'referral_list_enqueue_scripts' ) ) :
     wp_enqueue_style( 'all', 'https://use.fontawesome.com/releases/v5.12.1/css/all.css', false, null, 'all');
 
     wp_deregister_style( 'style-2' );
-    wp_enqueue_style( 'style-2', 'https://fonts.googleapis.com/css?family=Cairo:700,600&display=swap', false, null, 'all');
+    wp_enqueue_style( 'style-2', 'https://fonts.googleapis.com/css?family=Cairo:400&display=swap', false, null, 'all');
 
     /* Pinegrow generated Enqueue Styles End */
 

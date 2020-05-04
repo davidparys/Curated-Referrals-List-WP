@@ -73,6 +73,7 @@
                                                 <?php endforeach; ?>
                                             <?php endif; ?>
                                         </div>
+                                        <p><?php echo get_field( 'referral_description' ); ?></p>
                                         <div class="align-content-end align-items-end d-flex flex-grow-1 flex-row justify-content-around">
                                             <a class="font-bolder font-weight-normal text-decoration-none" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Learn More', 'referral_list' ); ?></a>
                                             <a class="c-button c-button-xs c-button-out btn" href="<?php echo esc_url( get_field( 'Referral_url' ) ); ?>"><?php _e( 'Get the link', 'referral_list' ); ?></a> 
