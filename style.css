@@ -1,14 +1,15 @@
 /*
 Theme Name: Referral-list
 Theme URI: https://referrals.parys.tech
-Author: David PARYS
+Author: David Parys
 Author URI: https://parys.tech
-Description: Created for referrals
+Description: Generated for Referrals. A tool allowing you to find referral links very easily.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: referral_list
 */
+
 :root {
     --c-main: #f3f1ff;
     --c-secondary: #faf9ff;
@@ -72,6 +73,7 @@ body {
     background-color: var(--c-bg);
     color: var(--c-paragraph);
     font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
     
 }
 h1,h2,h3,h4,h5,h6
