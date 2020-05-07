@@ -49,7 +49,7 @@
                         <?php
                             $referrals_query_args = array(
                                 'post_type' => 'referrals',
-                                'nopaging' => true,
+                                'posts_per_page' => 9,
                                 'order' => 'DESC',
                                 'orderby' => 'date'
                             )
