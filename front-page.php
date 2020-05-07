@@ -90,6 +90,9 @@
                         <!-- .row -->
                     </div>
                     <!-- .container -->
+                    <div class="col-12 text-center mt-3">
+                        <a class="btn c-button c-button-lg" href="/referrals"><?php _e( 'Check all the Links', 'referral_list' ); ?></a>
+                    </div>
                 </div>
             </section>
             <section id="newsletter">
