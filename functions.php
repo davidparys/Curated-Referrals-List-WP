@@ -101,12 +101,35 @@ function referral_list_init() {
         'taxonomies' => array( 'category' )
     ));
 
+    register_post_type('work_online', array(
+        'labels' => 
+            array(
+                'name' => __( 'Work Online', 'referral_list' ),
+                'singular_name' => __( 'Work Online', 'referral_list' )
+            ),
+        'description' => __( 'A curated list of easy jobs to find online', 'referral_list' ),
+        'public' => true,
+        'hierarchical' => true,
+        'supports' => array( 'title', 'author', 'thumbnail', 'custom-fields', 'editor' ),
+        'has_archive' => true,
+        'show_in_menu' => true
+    ));
+
     /* Pinegrow generated Custom Post Types End */
     
     /*
      * Register custom taxonomies. You can also move this code to a plugin.
      */
     /* Pinegrow generated Taxonomies Begin */
+
+    register_taxonomy('type_work', 'work_online', array(
+        'labels' => 
+            array(
+                'name' => __( 'Type of Work', 'referral_list' ),
+                'singular_name' => __( 'Type of Work', 'referral_list' )
+            ),
+        'hierarchical' => true
+    ));
 
     /* Pinegrow generated Taxonomies End */
 

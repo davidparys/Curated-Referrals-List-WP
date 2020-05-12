@@ -151,6 +151,74 @@
                     </div>
                 </div>
             </section>
+            <section id="work-links">
+                <div class="container py-5">
+                    <!-- container -->
+                    <div class="h5">
+                        <span class="badge badge-c-purple mb-3"><?php _e( 'Work Links', 'referral_list' ); ?></span>
+                    </div>
+                    <div class="mb-3 row text-center text-sm-left">
+                        <div class="col"> 
+                            <h2 class="mb-3 mb-sm-0"><?php _e( 'Find easily small work and get rewarded', 'referral_list' ); ?></h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <p><?php _e( 'If you need a couple of bucks, you should definitely checks some of these websites as they provide an easy payout.', 'referral_list' ); ?></p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="justify-content-center row">
+                        <!-- Column 1-->
+                        <?php
+                            $work_online_query_args = array(
+                                'post_type' => 'work_online',
+                                'posts_per_page' => 9,
+                                'order' => 'DESC',
+                                'orderby' => 'date'
+                            )
+                        ?>
+                        <?php $work_online_query = new WP_Query( $work_online_query_args ); ?>
+                        <?php if ( $work_online_query->have_posts() ) : ?>
+                            <?php while ( $work_online_query->have_posts() ) : $work_online_query->the_post(); ?>
+                                <?php PG_Helper::rememberShownPost(); ?>
+                                <div id="custom-post" <?php post_class( 'col-md-4 col-sm-6 d-flex p-2' ); ?>>
+                                    <div class="c-border col-12 d-flex flex-column p-3">
+                                        <?php if ( is_singular() ) : ?>
+                                            <h3 class="h4"><?php the_title(); ?></h3>
+                                        <?php else : ?>
+                                            <h3 class="h4"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h3>
+                                        <?php endif; ?>
+                                        <div>
+                                            <?php if ( has_term( '', 'type_work', null ) ) : ?>
+                                                <?php $terms = get_the_terms( get_the_ID(), 'category' ) ?>
+                                                <?php if( !empty( $terms ) ) : ?>
+                                                    <?php foreach( $terms as $term ) : ?>
+                                                        <span class="badge badge-c-purple mb-3"><?php echo $term->name; ?></span>
+                                                    <?php endforeach; ?>
+                                                <?php endif; ?>
+                                            <?php endif; ?>
+                                        </div>
+                                        <p><?php echo get_field( 'work_description' ); ?></p>
+                                        <div class="align-content-end align-items-end d-flex flex-grow-1 flex-row justify-content-around">
+                                            <a class="font-bolder font-weight-normal text-decoration-none" href="<?php echo esc_url( get_permalink() ); ?>"><?php _e( 'Learn More', 'referral_list' ); ?></a>
+                                            <a class="c-button c-button-xs c-button-out btn" href="<?php echo esc_url( get_field( 'work_link' ) ); ?>"><?php _e( 'Get the link', 'referral_list' ); ?></a> 
+                                        </div>
+                                    </div>
+                                </div>
+                            <?php endwhile; ?>
+                            <?php wp_reset_postdata(); ?>
+                        <?php else : ?>
+                            <p><?php _e( 'Sorry, no posts matched your criteria.', 'referral_list' ); ?></p>
+                        <?php endif; ?>
+                        <!-- .row -->
+                    </div>
+                    <!-- .container -->
+                    <div class="col-12 text-center mt-3">
+                        <a class="btn c-button c-button-lg" href="/work_online"><?php _e( 'Check all the Links', 'referral_list' ); ?></a>
+                    </div>
+                </div>
+            </section>
             <section>
                 <div class="container p-5 general-roundness c-rounded-container">
                     <div class="row">
