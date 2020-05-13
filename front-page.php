@@ -164,7 +164,7 @@
                     </div>
                     <div class="row">
                         <div class="col-12 col-md-6">
-                            <p><?php _e( 'If you need a couple of bucks, you should definitely checks some of these websites as they provide an easy payout.', 'referral_list' ); ?></p>
+                            <p><?php _e( 'If you need a couple of bucks, you should definitely check some of these websites as they provide an easy payout.', 'referral_list' ); ?></p>
                         </div>
                     </div>
                     <hr>
